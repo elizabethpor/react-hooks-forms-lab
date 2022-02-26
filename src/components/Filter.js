@@ -9,6 +9,7 @@ function Filter({ onCategoryChange, onSearchChange, searchText, selectedCategory
   function handleChange(event) {
     onCategoryChange(event.target.value);
   }
+  
   return (
     <div className="Filter">
       <input type="text" name="search" placeholder="Search..." onChange={handleSearch} value={searchText}/>
